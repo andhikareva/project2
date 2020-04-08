@@ -48,7 +48,7 @@ public class RealActivity extends AppCompatActivity {
                 "10"));
         face.add(new TeamLogo(R.drawable.kroos,
                 "Toni Kroos",
-                "Belakang",
+                "Tengah",
                 "8"));
         face.add(new TeamLogo(R.drawable.isco,
                 "Isco Alarcon",
@@ -66,7 +66,6 @@ public class RealActivity extends AppCompatActivity {
                 "Karim Benzema",
                 "Depan",
                 "9"));
-
 
         TeamLogoAdapter adapter = new TeamLogoAdapter(this, face);
         faceView.setAdapter(adapter);

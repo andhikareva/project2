@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="rv_real" type="id" />
+    <item name="rv_chelsea" type="id" />
+    <item name="rv_roma" type="id" />
+    <item name="rv_city" type="id" />
 </resources>
