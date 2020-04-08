@@ -21,50 +21,50 @@ public class CityActivity extends Activity {
         RecyclerView faceView = findViewById(R.id.rv_city);
 
         List<TeamLogo> face = new ArrayList<>();
-        face.add(new TeamLogo(R.drawable.c1,
-                "Kepa Arrizabalaga",
+        face.add(new TeamLogo(R.drawable.m1,
+                "Ederson",
                 "Kiper",
-                "1"));
-        face.add(new TeamLogo(R.drawable.c2,
-                "Kurt Zouma",
-                "Belakang",
-                "5"));
-        face.add(new TeamLogo(R.drawable.c3,
-                "Cesar Azpilicueta",
-                "Belakang",
-                "28"));
-        face.add(new TeamLogo(R.drawable.c4,
-                "Toni RUdiger",
+                "31"));
+        face.add(new TeamLogo(R.drawable.m2,
+                "Kyle Walker",
                 "Belakang",
                 "2"));
-        face.add(new TeamLogo(R.drawable.c5,
-                "Marcos Alonso",
+        face.add(new TeamLogo(R.drawable.m3,
+                "John Stones",
                 "Belakang",
-                "3"));
-        face.add(new TeamLogo(R.drawable.c6,
-                "Ngolo Kante",
-                "Tengah",
-                "7"));
-        face.add(new TeamLogo(R.drawable.c7,
-                "Ross Barkley",
-                "Tengah",
-                "8"));
-        face.add(new TeamLogo(R.drawable.c8,
-                "Mason Mount",
-                "Tengah",
-                "19"));
-        face.add(new TeamLogo(R.drawable.c9,
-                "Pedro",
-                "Depan",
+                "5"));
+        face.add(new TeamLogo(R.drawable.m4,
+                "Aymeric Laporte",
+                "Belakang",
+                "14"));
+        face.add(new TeamLogo(R.drawable.m5,
+                "Oleksandr Zinchenko",
+                "Belakang",
                 "11"));
-        face.add(new TeamLogo(R.drawable.c10,
-                "Olivier Giroud",
+        face.add(new TeamLogo(R.drawable.m6,
+                "Kevin De Bruyne",
+                "Tengah",
+                "17"));
+        face.add(new TeamLogo(R.drawable.m7,
+                "David Silva",
+                "Tengah",
+                "21"));
+        face.add(new TeamLogo(R.drawable.m8,
+                "Phil Foden",
+                "Tengah",
+                "47"));
+        face.add(new TeamLogo(R.drawable.m9,
+                "Riyad Mahrez",
                 "Depan",
-                "18"));
-        face.add(new TeamLogo(R.drawable.c11,
-                "Willian",
+                "26"));
+        face.add(new TeamLogo(R.drawable.m10,
+                "Raheem Sterling",
                 "Depan",
-                "22"));
+                "7"));
+        face.add(new TeamLogo(R.drawable.m11,
+                "Sergio Aguero",
+                "Depan",
+                "10"));
 
         TeamLogoAdapter adapter = new TeamLogoAdapter(this, face);
         faceView.setAdapter(adapter);
