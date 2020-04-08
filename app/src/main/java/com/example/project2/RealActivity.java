@@ -26,6 +26,47 @@ public class RealActivity extends AppCompatActivity {
             "Thibaut Courtois",
             "Kiper",
             "13"));
+        face.add(new TeamLogo(R.drawable.carvajal,
+                "Daniel Carvajal",
+                "Belakang",
+                "2"));
+        face.add(new TeamLogo(R.drawable.varane,
+                "Raphael Varane",
+                "Belakang",
+                "5"));
+        face.add(new TeamLogo(R.drawable.ramos,
+                "Sergio Ramos",
+                "Belakang",
+                "4"));
+        face.add(new TeamLogo(R.drawable.mendy,
+                "Ferland Mendy",
+                "Belakang",
+                "23"));
+        face.add(new TeamLogo(R.drawable.modric,
+                "Luka Modric",
+                "Tengah",
+                "10"));
+        face.add(new TeamLogo(R.drawable.kroos,
+                "Toni Kroos",
+                "Belakang",
+                "8"));
+        face.add(new TeamLogo(R.drawable.isco,
+                "Isco Alarcon",
+                "Tengah",
+                "22"));
+        face.add(new TeamLogo(R.drawable.hazard,
+                "Eden Hazard",
+                "Depan",
+                "7"));
+        face.add(new TeamLogo(R.drawable.bale,
+                "Gareth Bale",
+                "Depan",
+                "11"));
+        face.add(new TeamLogo(R.drawable.benzema,
+                "Karim Benzema",
+                "Depan",
+                "9"));
+
 
         TeamLogoAdapter adapter = new TeamLogoAdapter(this, face);
         faceView.setAdapter(adapter);

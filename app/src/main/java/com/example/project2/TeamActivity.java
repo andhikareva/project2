@@ -1,6 +1,10 @@
 package com.example.project2;
 
 import android.app.Activity;
+import android.os.Bundle;
 
-public class TeamActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class TeamActivity extends AppCompatActivity {
+    }
 }
