@@ -11,52 +11,58 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.project2.DataActivity;
+import com.example.project2.ChelseaActivity;
+import com.example.project2.CityActivity;
 import com.example.project2.R;
 import com.example.project2.RealActivity;
 import com.example.project2.model.TeamLogo;
+import com.example.project2.model.TeamModel;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class TeamLogoAdapter extends RecyclerView.Adapter<TeamLogoAdapter.ViewHolder> {
-
+public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     private Context context;
-    private List<TeamLogo> items;
+    private List<TeamModel> items;
 
-    public TeamLogoAdapter(Context context, List<TeamLogo> items) {
+    public TeamAdapter(Context context, List<TeamModel> items) {
         this.context = context;
         this.items = items;
     }
 
     @NonNull
     @Override
-    public TeamLogoAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.item_team, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        final TeamLogo item = items.get(position);
+    public void onBindViewHolder(@NonNull TeamAdapter.ViewHolder holder, final int position) {
+        final TeamModel item = items.get(position);
         holder.nameText.setText(item.getName());
-        Picasso.get().load(item.getFace()).into(holder.faceImage);
+        Picasso.get().load(item.getLogo()).into(holder.faceImage);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, DataActivity.class);
-                i.putExtra("face", item.getFace());
-                i.putExtra("name", item.getName());
-                i.putExtra("posisi", item.getPosisi());
-                i.putExtra("nomor", item.getNomor());
+                if (items.get(position).getRow().matches("1")){
+                    Intent go = new Intent(context, RealActivity.class);
+                    context.startActivity(go);
+                } else if (items.get(position).getRow().matches("2")){
+                    Intent go = new Intent(context, ChelseaActivity.class);
+                    context.startActivity(go);
+                } else if (items.get(position).getRow().matches("3")){
+                    Intent go = new Intent(context, CityActivity.class);
+                    context.startActivity(go);
+                }
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return (items != null) ? items.size() : 0;
+        return 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -66,7 +72,8 @@ public class TeamLogoAdapter extends RecyclerView.Adapter<TeamLogoAdapter.ViewHo
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             faceImage = itemView.findViewById(R.id.face);
-            nameText = itemView.findViewById(R.id.name);
+            nameText = itemView.findViewById(R.id.team);
+
         }
     }
 }

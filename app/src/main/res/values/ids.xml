@@ -4,4 +4,7 @@
     <item name="rv_chelsea" type="id" />
     <item name="rv_roma" type="id" />
     <item name="rv_city" type="id" />
+    <item name="face" type="id" />
+    <item name="posisi" type="id" />
+    <item name="nomor" type="id" />
 </resources>
