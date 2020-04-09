@@ -18,7 +18,6 @@ public class RealActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_real);
-
         RecyclerView faceView = findViewById(R.id.rv_real);
 
         List<TeamLogo> face = new ArrayList<>();

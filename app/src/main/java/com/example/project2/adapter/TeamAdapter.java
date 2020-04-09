@@ -62,7 +62,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return (items != null) ? items.size() : 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -71,7 +71,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            faceImage = itemView.findViewById(R.id.face);
+            faceImage = itemView.findViewById(R.id.image);
             nameText = itemView.findViewById(R.id.team);
 
         }

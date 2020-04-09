@@ -17,7 +17,6 @@ public class CityActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city);
-
         RecyclerView faceView = findViewById(R.id.rv_city);
 
         List<TeamLogo> face = new ArrayList<>();

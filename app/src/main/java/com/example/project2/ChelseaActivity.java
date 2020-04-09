@@ -18,7 +18,6 @@ public class ChelseaActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chelsea);
-
         RecyclerView faceView = findViewById(R.id.rv_chelsea);
 
         List<TeamLogo> face = new ArrayList<>();

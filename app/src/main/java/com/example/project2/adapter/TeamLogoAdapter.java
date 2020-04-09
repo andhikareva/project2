@@ -50,6 +50,7 @@ public class TeamLogoAdapter extends RecyclerView.Adapter<TeamLogoAdapter.ViewHo
                 i.putExtra("name", item.getName());
                 i.putExtra("posisi", item.getPosisi());
                 i.putExtra("nomor", item.getNomor());
+                context.startActivity(i);
             }
         });
     }
@@ -65,8 +66,8 @@ public class TeamLogoAdapter extends RecyclerView.Adapter<TeamLogoAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            faceImage = itemView.findViewById(R.id.face);
-            nameText = itemView.findViewById(R.id.name);
+            faceImage = itemView.findViewById(R.id.image);
+            nameText = itemView.findViewById(R.id.team);
         }
     }
 }
