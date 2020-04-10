@@ -13,7 +13,8 @@ public class DataActivity extends AppCompatActivity {
 
     ImageView face;
     TextView name, posisi, nomor;
-    String face2, name2,posisi2, nomor2;
+    String name2,posisi2, nomor2;
+    int face2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class DataActivity extends AppCompatActivity {
         posisi = findViewById(R.id.posisi);
         nomor = findViewById(R.id.nomor);
 
-        face2 = getIntent().getStringExtra("face");
+        face2 = getIntent().getIntExtra("face", 0);
         name2 = getIntent().getStringExtra("name");
         posisi2 = getIntent().getStringExtra("posisi");
         nomor2 = getIntent().getStringExtra("nomor");

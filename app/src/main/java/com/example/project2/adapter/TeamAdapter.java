@@ -15,7 +15,6 @@ import com.example.project2.ChelseaActivity;
 import com.example.project2.CityActivity;
 import com.example.project2.R;
 import com.example.project2.RealActivity;
-import com.example.project2.model.TeamLogo;
 import com.example.project2.model.TeamModel;
 import com.squareup.picasso.Picasso;
 

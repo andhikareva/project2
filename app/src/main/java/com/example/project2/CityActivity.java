@@ -3,6 +3,7 @@ package com.example.project2;
 import android.app.Activity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,7 +13,7 @@ import com.example.project2.model.TeamLogo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CityActivity extends Activity {
+public class CityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
