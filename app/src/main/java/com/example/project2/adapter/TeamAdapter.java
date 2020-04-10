@@ -13,8 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.project2.ChelseaActivity;
 import com.example.project2.CityActivity;
+import com.example.project2.ManuActivity;
 import com.example.project2.R;
 import com.example.project2.RealActivity;
+import com.example.project2.WhuActivity;
 import com.example.project2.model.TeamModel;
 import com.squareup.picasso.Picasso;
 
@@ -53,6 +55,12 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
                     context.startActivity(go);
                 } else if (items.get(position).getRow().matches("3")){
                     Intent go = new Intent(context, CityActivity.class);
+                    context.startActivity(go);
+                } else if (items.get(position).getRow().matches("4")){
+                    Intent go = new Intent(context, ManuActivity.class);
+                    context.startActivity(go);
+                } else if (items.get(position).getRow().matches("5")){
+                    Intent go = new Intent(context, WhuActivity.class);
                     context.startActivity(go);
                 }
             }

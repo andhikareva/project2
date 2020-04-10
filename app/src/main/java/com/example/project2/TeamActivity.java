@@ -30,6 +30,12 @@ public class TeamActivity extends AppCompatActivity {
         team.add(new TeamModel(R.drawable.logo_mc,
                 "Manchester City",
                 "3"));
+        team.add(new TeamModel(R.drawable.logo_mu,
+                "Manchester United",
+                "4"));
+        team.add(new TeamModel(R.drawable.logo_whu,
+                "West Ham United",
+                "5"));
 
         TeamAdapter adapter = new TeamAdapter(this, team);
         teamView.setAdapter(adapter);
